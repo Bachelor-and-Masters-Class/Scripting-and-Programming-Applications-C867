@@ -1,3 +1,9 @@
 #pragma once
 
 enum DegreeProgram { SECURITY, NETWORK, SOFTWARE };
+
+static const std::string degreeProgramStrings[] = { "SECURITY", "NETWORK", "SOFTWARE" };
+
+
+#pragma once
+
