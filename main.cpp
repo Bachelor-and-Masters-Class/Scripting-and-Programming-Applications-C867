@@ -2,6 +2,7 @@
 #include <sstream>  // ? Required for stringstream and getline
 #include <string>
 #include "roster.h" // ? Make sure to include your Roster class
+#include "main.h"
 
 using namespace std;
 
@@ -46,6 +47,9 @@ int main() {
     cout << "Removing student with ID A3:\n";
     classRoster.Remove("A3");
     cout << "\n";
+
+    cout << "Displaying all students:" << endl;
+    classRoster.PrintAll();
 
     cout << "Attempting to remove student A3 again:\n";
     classRoster.Remove("A3");
