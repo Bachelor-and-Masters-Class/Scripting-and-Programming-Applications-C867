@@ -1,6 +1,6 @@
 **Overview**
 
-This repository contains my completed submission for the WGU course **C867 – Scripting and Programming: Applications**.
+This repository contains my completed submission for the WGU course **C867: Scripting and Programming: Applications**.
 
 The project is a **C++ student roster management application** demonstrating object-oriented design in a language without automatic memory management. The program parses a set of student records from delimited string data, stores them as dynamically allocated objects, and provides reporting operations across the roster.
 
@@ -37,19 +37,19 @@ A DegreeProgram enumerated type defines SECURITY, NETWORK, and SOFTWARE. Using a
 **Roster Class**
 Manages an array of Student pointers and provides the application's core operations:
 
--**ParseThenAdd** – tokenizes a delimited record with a string stream, converts the degree string into its enumerated value, and delegates to Add
+-**ParseThenAdd**: tokenizes a delimited record with a string stream, converts the degree string into its enumerated value, and delegates to Add
 
--**Add** – constructs a new Student on the heap and stores its pointer in the roster array
+-**Add**: constructs a new Student on the heap and stores its pointer in the roster array
 
--**Remove** – locates a student by ID, deletes the object, nulls the pointer, and reports whether the removal succeeded
+-**Remove**: locates a student by ID, deletes the object, nulls the pointer, and reports whether the removal succeeded
 
--**PrintAll** – prints every active record, skipping removed entries
+-**PrintAll**: prints every active record, skipping removed entries
 
--**PrintAverageDaysInCourse** – computes and prints the mean days in course for a given student ID
+-**PrintAverageDaysInCourse**: computes and prints the mean days in course for a given student ID
 
--**PrintInvalidEmails** – flags any email address missing an at sign or a period, or containing a space
+-**PrintInvalidEmails**: flags any email address missing an at sign or a period, or containing a space
 
--**PrintByDegreeProgram** – prints only students enrolled in a specified degree program
+-**PrintByDegreeProgram**: prints only students enrolled in a specified degree program
 
 **Memory Management**
 The Roster destructor iterates the full array, deletes each allocated Student, and sets each pointer to null, ensuring all heap memory is released at program termination.
@@ -85,12 +85,12 @@ g++ main.cpp roster.cpp student.cpp -o roster
 
 **Repository Contents**
 
--`main.cpp`, `main.h` – Program entry point and roster driver logic
+-`main.cpp`, `main.h`: Program entry point and roster driver logic
 
--`roster.cpp`, `roster.h` – Roster class: parsing, add, remove, and reporting operations
+-`roster.cpp`, `roster.h`: Roster class: parsing, add, remove, and reporting operations
 
--`student.cpp`, `student.h` – Student class definition and implementation
+-`student.cpp`, `student.h`: Student class definition and implementation
 
--`degree.h` – DegreeProgram enumeration
+-`degree.h`: DegreeProgram enumeration
 
--`C867GitLab.sln`, `C867GitLab.vcxproj` – Visual Studio solution and project files
+-`C867GitLab.sln`, `C867GitLab.vcxproj`: Visual Studio solution and project files
