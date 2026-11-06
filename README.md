@@ -1,6 +1,6 @@
 # C++ Student Roster
 
-**WGU C867 · Scripting and Programming: Applications**
+**WGU C867 · Scripting and Programming - Applications**
 
 A class roster app in C++. It reads student records from text, stores them, and runs reports on them. C++ doesn't clean up memory for you, so a big part of this project is freeing every object it creates.
 
